@@ -32,6 +32,8 @@ Partial Class Form1
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.Usermode = New System.Windows.Forms.Button()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.adminbtn = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -111,20 +113,40 @@ Partial Class Form1
         '
         'Usermode
         '
-        Me.Usermode.Location = New System.Drawing.Point(167, 455)
+        Me.Usermode.Location = New System.Drawing.Point(226, 455)
         Me.Usermode.Name = "Usermode"
         Me.Usermode.Size = New System.Drawing.Size(75, 23)
         Me.Usermode.TabIndex = 11
         Me.Usermode.Text = "User Mode"
         Me.Usermode.UseVisualStyleBackColor = True
         '
+        'btnUpdate
+        '
+        Me.btnUpdate.Location = New System.Drawing.Point(97, 455)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
+        Me.btnUpdate.TabIndex = 12
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = True
+        '
+        'adminbtn
+        '
+        Me.adminbtn.Location = New System.Drawing.Point(162, 523)
+        Me.adminbtn.Name = "adminbtn"
+        Me.adminbtn.Size = New System.Drawing.Size(75, 23)
+        Me.adminbtn.TabIndex = 13
+        Me.adminbtn.Text = "Admin Mode"
+        Me.adminbtn.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Tailor.My.Resources.Resources._1
+        Me.BackgroundImage = Global.Tailor.My.Resources.Resources._11
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(819, 595)
+        Me.Controls.Add(Me.adminbtn)
+        Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.Usermode)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnAdd)
@@ -153,4 +175,6 @@ Partial Class Form1
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnDelete As Button
     Friend WithEvents Usermode As Button
+    Friend WithEvents btnUpdate As Button
+    Friend WithEvents adminbtn As Button
 End Class
